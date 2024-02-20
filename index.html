@@ -4,179 +4,361 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://static.twitchcdn.net/assets/favicon-16-52e571ffea063af7a7f4.png">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <title>Twitch Clone</title>
 </head>
 <body>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  
+      <div class="bar">
+        <div class="nav">
+          <div class="logo">
+            <img src="https://res.cloudinary.com/startup-grind/image/upload/fl_sanitize/v1/gcs/platform-data-twitch/contentbuilder/logo-final_DkOO8q1.svg" />
+          </div>
+          <div class="item" id="selected">Discover</div>
+          <div class="item">Following</div>
+          <div class="item">Browse</div>
+          <div class="item">Try Prime</div>
+        </div>
+      </div>
 
-    <body>
-      <div class="container">
-        <div class="bar">
-          <div class="nav">
-            <div class="logo">
-              <img src="https://res.cloudinary.com/startup-grind/image/upload/fl_sanitize/v1/gcs/platform-data-twitch/contentbuilder/logo-final_DkOO8q1.svg" />
+
+
+
+
+<div style="display: flex; width: 100%; padding-top: 50px;">
+
+
+
+
+      <div class="streamer-bar">
+        <div class="streamer-bar-title">
+          <p class="desktop-title">Followed Channels</p>
+          <p class="mobile-title">❤</p>
+        </div>
+        <div class="followed-channels">
+          <div class="followed-channel">
+            <div class="profile-image">
+              <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/a_seagull-profile_image-4d2d235688c7dc66-70x70.png" alt="A_Seagull" />
             </div>
-            <div class="item" id="selected">Discover</div>
-            <div class="item">Following</div>
-            <div class="item">Browse</div>
-            <div class="item">Try Prime</div>
+            <div class="profile-info">
+              <p class="profile-username">A_Seagull</p>
+              <p class="profile-game-title">Overwatch</p>
+            </div>
+            <div class="profile-viewers">
+              <div class="live-icon"></div>
+              <div class="viewer-count">4.1K</div>
+            </div>
+          </div>
+          <div class="followed-channel">
+            <div class="profile-image">
+              <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f915e077-b9a7-4a85-a5ea-7d51b2f600cb-profile_image-70x70.png" alt="Fitzyhere" />
+            </div>
+            <div class="profile-info">
+              <p class="profile-username">Fitzyhere</p>
+              <p class="profile-game-title">Overwatch</p>
+            </div>
+            <div class="profile-viewers">
+              <div class="live-icon"></div>
+              <div class="viewer-count">685</div>
+            </div>
+          </div>
+          <div class="followed-channel">
+            <div class="profile-image">
+              <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/525d89ba-6310-4eeb-a522-a34ba67e0c36-profile_image-70x70.png" alt="Fareeha" />
+            </div>
+            <div class="profile-info">
+              <p class="profile-username">Fareeha</p>
+              <p class="profile-game-title">
+                Animal Crossing: New Horizons
+              </p>
+            </div>
+            <div class="profile-viewers">
+              <div class="live-icon"></div>
+              <div class="viewer-count">300</div>
+            </div>
+          </div>
+          <div class="followed-channel">
+            <div class="profile-image">
+              <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/3983e5fd-aa7a-4206-8006-6687db26443b-profile_image-70x70.jpeg" alt="FRAN" />
+            </div>
+            <div class="profile-info">
+              <p class="profile-username">FRAN</p>
+              <p class="profile-game-title">Overwatch</p>
+            </div>
+            <div class="profile-viewers">
+              <div class="live-icon"></div>
+              <div class="viewer-count">289</div>
+            </div>
+          </div>
+          <div class="followed-channel">
+            <div class="profile-image">
+              <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f915e077-b9a7-4a85-a5ea-7d51b2f600cb-profile_image-70x70.png" alt="Fitzyhere" />
+            </div>
+            <div class="profile-info">
+              <p class="profile-username">HoshizoraOW</p>
+              <p class="profile-game-title">League of Legends</p>
+            </div>
+            <div class="profile-viewers">
+              <div class="live-icon"></div>
+              <div class="viewer-count">250</div>
+            </div>
+          </div>
+          <div class="followed-channel">
+            <div class="profile-image">
+              <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f915e077-b9a7-4a85-a5ea-7d51b2f600cb-profile_image-70x70.png" alt="Fitzyhere" />
+            </div>
+            <div class="profile-info">
+              <p class="profile-username">HoshizoraOW</p>
+              <p class="profile-game-title">League of Legends</p>
+            </div>
+            <div class="profile-viewers">
+              <div class="live-icon"></div>
+              <div class="viewer-count">250</div>
+            </div>
+          </div>
+          <div class="followed-channel">
+            <div class="profile-image">
+              <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f915e077-b9a7-4a85-a5ea-7d51b2f600cb-profile_image-70x70.png" alt="Fitzyhere" />
+            </div>
+            <div class="profile-info">
+              <p class="profile-username">HoshizoraOW</p>
+              <p class="profile-game-title">League of Legends</p>
+            </div>
+            <div class="profile-viewers">
+              <div class="live-icon"></div>
+              <div class="viewer-count">250</div>
+            </div>
+          </div>
+          <div class="followed-channel">
+            <div class="profile-image">
+              <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f915e077-b9a7-4a85-a5ea-7d51b2f600cb-profile_image-70x70.png" alt="Fitzyhere" />
+            </div>
+            <div class="profile-info">
+              <p class="profile-username">HoshizoraOW</p>
+              <p class="profile-game-title">League of Legends</p>
+            </div>
+            <div class="profile-viewers">
+              <div class="live-icon"></div>
+              <div class="viewer-count">250</div>
+            </div>
+          </div>
+          <div class="followed-channel">
+            <div class="profile-image">
+              <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f915e077-b9a7-4a85-a5ea-7d51b2f600cb-profile_image-70x70.png" alt="EeveeA_" />
+            </div>
+            <div class="profile-info">
+              <p class="profile-username">EeveeA_</p>
+              <p class="profile-game-title">Overwatch</p>
+            </div>
+            <div class="profile-viewers">
+              <div class="live-icon"></div>
+              <div class="viewer-count">230</div>
+            </div>
+          </div>
+          <div class="followed-channel">
+            <div class="profile-image" style="filter: grayscale(100%) contrast(85%);">
+              <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f915e077-b9a7-4a85-a5ea-7d51b2f600cb-profile_image-70x70.png" alt="BGG" />
+            </div>
+            <div class="profile-info">
+              <p class="profile-username">BlackGirlGamers</p>
+              <p class="profile-game-title">1 New Upload</p>
+            </div>
+            <div class="profile-viewers">
+              <!-- <div class="viewer-count">Online</div> -->
+            </div>
           </div>
         </div>
-        <div class="main">
-          <div class="streamer-bar">
-            <div class="streamer-bar-title">
-              <p class="desktop-title">Followed Channels</p>
-              <p class="mobile-title">❤</p>
-            </div>
-            <div class="followed-channels">
-              <div class="followed-channel">
-                <div class="profile-image">
-                  <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/a_seagull-profile_image-4d2d235688c7dc66-70x70.png" alt="A_Seagull" />
-                </div>
-                <div class="profile-info">
-                  <p class="profile-username">A_Seagull</p>
-                  <p class="profile-game-title">Overwatch</p>
-                </div>
-                <div class="profile-viewers">
-                  <div class="live-icon"></div>
-                  <div class="viewer-count">4.1K</div>
-                </div>
-              </div>
-              <div class="followed-channel">
-                <div class="profile-image">
-                  <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f915e077-b9a7-4a85-a5ea-7d51b2f600cb-profile_image-70x70.png" alt="Fitzyhere" />
-                </div>
-                <div class="profile-info">
-                  <p class="profile-username">Fitzyhere</p>
-                  <p class="profile-game-title">Overwatch</p>
-                </div>
-                <div class="profile-viewers">
-                  <div class="live-icon"></div>
-                  <div class="viewer-count">685</div>
-                </div>
-              </div>
-              <div class="followed-channel">
-                <div class="profile-image">
-                  <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/525d89ba-6310-4eeb-a522-a34ba67e0c36-profile_image-70x70.png" alt="Fareeha" />
-                </div>
-                <div class="profile-info">
-                  <p class="profile-username">Fareeha</p>
-                  <p class="profile-game-title">
-                    Animal Crossing: New Horizons
-                  </p>
-                </div>
-                <div class="profile-viewers">
-                  <div class="live-icon"></div>
-                  <div class="viewer-count">300</div>
-                </div>
-              </div>
-              <div class="followed-channel">
-                <div class="profile-image">
-                  <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/3983e5fd-aa7a-4206-8006-6687db26443b-profile_image-70x70.jpeg" alt="FRAN" />
-                </div>
-                <div class="profile-info">
-                  <p class="profile-username">FRAN</p>
-                  <p class="profile-game-title">Overwatch</p>
-                </div>
-                <div class="profile-viewers">
-                  <div class="live-icon"></div>
-                  <div class="viewer-count">289</div>
-                </div>
-              </div>
-              <div class="followed-channel">
-                <div class="profile-image">
-                  <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/0f4609fe-ecfd-4df5-be91-8406ce11bf59-profile_image-70x70.png" alt="Fitzyhere" />
-                </div>
-                <div class="profile-info">
-                  <p class="profile-username">HoshizoraOW</p>
-                  <p class="profile-game-title">League of Legends</p>
-                </div>
-                <div class="profile-viewers">
-                  <div class="live-icon"></div>
-                  <div class="viewer-count">250</div>
-                </div>
-              </div>
-              <div class="followed-channel">
-                <div class="profile-image">
-                  <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f8964551-4fe4-4db9-adaf-5735ed378521-profile_image-70x70.png" alt="EeveeA_" />
-                </div>
-                <div class="profile-info">
-                  <p class="profile-username">EeveeA_</p>
-                  <p class="profile-game-title">Overwatch</p>
-                </div>
-                <div class="profile-viewers">
-                  <div class="live-icon"></div>
-                  <div class="viewer-count">230</div>
-                </div>
-              </div>
-              <div class="followed-channel">
-                <div class="profile-image" style="filter: grayscale(100%) contrast(85%);">
-                  <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/a0268cf9-5237-4037-8f33-1b51ba2e56b1-profile_image-70x70.png" alt="BGG" />
-                </div>
-                <div class="profile-info">
-                  <p class="profile-username">BlackGirlGamers</p>
-                  <p class="profile-game-title">1 New Upload</p>
-                </div>
-                <div class="profile-viewers">
-                  <!-- <div class="viewer-count">Online</div> -->
-                </div>
-              </div>
-            </div>
-            <br />
-            <small>Show More</small>
-            <br />
-            <div class="recommended-channels">
-              <div class="streamer-bar-title">
-                <p class="desktop-title">Recommended Channels</p>
-                <p class="mobile-title"><i class="fa fa-film"></i></p>
-              </div>
-              <div class="followed-channels">
-                <div class="followed-channel">
-                  <div class="profile-image">
-                    <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/a5e9679a-6b4d-436c-9e78-d801e42555fc-profile_image-70x70.png" alt="Princess" />
-                  </div>
-                  <div class="profile-info">
-                    <p class="profile-username">PrinzessinDaenerys</p>
-                    <p class="profile-game-title">Overwatch</p>
-                  </div>
-                  <div class="profile-viewers">
-                    <div class="live-icon"></div>
-                    <div class="viewer-count">1.1K</div>
-                  </div>
-                </div>
-                <div class="followed-channel">
-                  <div class="profile-image">
-                    <img src="https://yt3.ggpht.com/a/AATXAJw5CettE2cTDy_IDP37036lK9ShIfbDOAytUw=s288-c-k-c0xffffffff-no-rj-mo" alt="Sylvi" />
-                  </div>
-                  <div class="profile-info">
-                    <p class="profile-username">Sylvibot</p>
-                    <p class="profile-game-title">Overwatch</p>
-                  </div>
-                  <div class="profile-viewers">
-                    <div class="live-icon"></div>
-                    <div class="viewer-count">165</div>
-                  </div>
-                </div>
-                <div class="followed-channel">
-                  <div class="profile-image" style="filter: grayscale(100%) contrast(85%);">
-                    <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/lara6683-profile_image-4aa7e08e70c72924-70x70.jpeg" alt="Lara" />
-                  </div>
-                  <div class="profile-info">
-                    <p class="profile-username">lara6683</p>
-                    <p class="profile-game-title">
-                      3 new videos
-                    </p>
-                  </div>
-                  <div class="profile-viewers">
-                    <div class="viewer-count"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br />
-            <small>Show More</small>
-            <br />
+        <br />
+        <small>Show More</small>
+        <br />
+        <div class="recommended-channels">
+          <div class="streamer-bar-title">
+            <p class="desktop-title">Recommended Channels</p>
+            <p class="mobile-title"><i class="fa fa-film"></i></p>
           </div>
+          <div class="followed-channels">
+            <div class="followed-channel">
+              <div class="profile-image">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/a5e9679a-6b4d-436c-9e78-d801e42555fc-profile_image-70x70.png" alt="Princess" />
+              </div>
+              <div class="profile-info">
+                <p class="profile-username">PrinzessinDaenerys</p>
+                <p class="profile-game-title">Overwatch</p>
+              </div>
+              <div class="profile-viewers">
+                <div class="live-icon"></div>
+                <div class="viewer-count">1.1K</div>
+              </div>
+            </div>
+            <div class="followed-channel">
+              <div class="profile-image">
+                <img src="https://yt3.ggpht.com/a/AATXAJw5CettE2cTDy_IDP37036lK9ShIfbDOAytUw=s288-c-k-c0xffffffff-no-rj-mo" alt="Sylvi" />
+              </div>
+              <div class="profile-info">
+                <p class="profile-username">Sylvibot</p>
+                <p class="profile-game-title">Overwatch</p>
+              </div>
+              <div class="profile-viewers">
+                <div class="live-icon"></div>
+                <div class="viewer-count">165</div>
+              </div>
+            </div>
+            <div class="followed-channel">
+              <div class="profile-image">
+                <img src="https://yt3.ggpht.com/a/AATXAJw5CettE2cTDy_IDP37036lK9ShIfbDOAytUw=s288-c-k-c0xffffffff-no-rj-mo" alt="Sylvi" />
+              </div>
+              <div class="profile-info">
+                <p class="profile-username">Sylvibot</p>
+                <p class="profile-game-title">Overwatch</p>
+              </div>
+              <div class="profile-viewers">
+                <div class="live-icon"></div>
+                <div class="viewer-count">165</div>
+              </div>
+            </div>
+            <div class="followed-channel">
+              <div class="profile-image">
+                <img src="https://yt3.ggpht.com/a/AATXAJw5CettE2cTDy_IDP37036lK9ShIfbDOAytUw=s288-c-k-c0xffffffff-no-rj-mo" alt="Sylvi" />
+              </div>
+              <div class="profile-info">
+                <p class="profile-username">Sylvibot</p>
+                <p class="profile-game-title">Overwatch</p>
+              </div>
+              <div class="profile-viewers">
+                <div class="live-icon"></div>
+                <div class="viewer-count">165</div>
+              </div>
+            </div>
+            <div class="followed-channel">
+              <div class="profile-image">
+                <img src="https://yt3.ggpht.com/a/AATXAJw5CettE2cTDy_IDP37036lK9ShIfbDOAytUw=s288-c-k-c0xffffffff-no-rj-mo" alt="Sylvi" />
+              </div>
+              <div class="profile-info">
+                <p class="profile-username">Sylvibot</p>
+                <p class="profile-game-title">Overwatch</p>
+              </div>
+              <div class="profile-viewers">
+                <div class="live-icon"></div>
+                <div class="viewer-count">165</div>
+              </div>
+            </div>
+            <div class="followed-channel">
+              <div class="profile-image">
+                <img src="https://yt3.ggpht.com/a/AATXAJw5CettE2cTDy_IDP37036lK9ShIfbDOAytUw=s288-c-k-c0xffffffff-no-rj-mo" alt="Sylvi" />
+              </div>
+              <div class="profile-info">
+                <p class="profile-username">Sylvibot</p>
+                <p class="profile-game-title">Overwatch</p>
+              </div>
+              <div class="profile-viewers">
+                <div class="live-icon"></div>
+                <div class="viewer-count">165</div>
+              </div>
+            </div>
+            <div class="followed-channel">
+              <div class="profile-image">
+                <img src="https://yt3.ggpht.com/a/AATXAJw5CettE2cTDy_IDP37036lK9ShIfbDOAytUw=s288-c-k-c0xffffffff-no-rj-mo" alt="Sylvi" />
+              </div>
+              <div class="profile-info">
+                <p class="profile-username">Sylvibot</p>
+                <p class="profile-game-title">Overwatch</p>
+              </div>
+              <div class="profile-viewers">
+                <div class="live-icon"></div>
+                <div class="viewer-count">165</div>
+              </div>
+            </div>
+            <div class="followed-channel">
+              <div class="profile-image">
+                <img src="https://yt3.ggpht.com/a/AATXAJw5CettE2cTDy_IDP37036lK9ShIfbDOAytUw=s288-c-k-c0xffffffff-no-rj-mo" alt="Sylvi" />
+              </div>
+              <div class="profile-info">
+                <p class="profile-username">Sylvibot</p>
+                <p class="profile-game-title">Overwatch</p>
+              </div>
+              <div class="profile-viewers">
+                <div class="live-icon"></div>
+                <div class="viewer-count">165</div>
+              </div>
+            </div>
+            <div class="followed-channel">
+              <div class="profile-image">
+                <img src="https://yt3.ggpht.com/a/AATXAJw5CettE2cTDy_IDP37036lK9ShIfbDOAytUw=s288-c-k-c0xffffffff-no-rj-mo" alt="Sylvi" />
+              </div>
+              <div class="profile-info">
+                <p class="profile-username">Sylvibot</p>
+                <p class="profile-game-title">Overwatch</p>
+              </div>
+              <div class="profile-viewers">
+                <div class="live-icon"></div>
+                <div class="viewer-count">165</div>
+              </div>
+            </div>
+            <div class="followed-channel">
+              <div class="profile-image">
+                <img src="https://yt3.ggpht.com/a/AATXAJw5CettE2cTDy_IDP37036lK9ShIfbDOAytUw=s288-c-k-c0xffffffff-no-rj-mo" alt="Sylvi" />
+              </div>
+              <div class="profile-info">
+                <p class="profile-username">Sylvibot</p>
+                <p class="profile-game-title">Overwatch</p>
+              </div>
+              <div class="profile-viewers">
+                <div class="live-icon"></div>
+                <div class="viewer-count">165</div>
+              </div>
+            </div>
+            <div class="followed-channel">
+              <div class="profile-image">
+                <img src="https://yt3.ggpht.com/a/AATXAJw5CettE2cTDy_IDP37036lK9ShIfbDOAytUw=s288-c-k-c0xffffffff-no-rj-mo" alt="Sylvi" />
+              </div>
+              <div class="profile-info">
+                <p class="profile-username">Sylvibot</p>
+                <p class="profile-game-title">Overwatch</p>
+              </div>
+              <div class="profile-viewers">
+                <div class="live-icon"></div>
+                <div class="viewer-count">165</div>
+              </div>
+            </div>
+            <div class="followed-channel">
+              <div class="profile-image">
+                <img src="https://yt3.ggpht.com/a/AATXAJw5CettE2cTDy_IDP37036lK9ShIfbDOAytUw=s288-c-k-c0xffffffff-no-rj-mo" alt="Sylvi" />
+              </div>
+              <div class="profile-info">
+                <p class="profile-username">Sylvibot</p>
+                <p class="profile-game-title">Overwatch</p>
+              </div>
+              <div class="profile-viewers">
+                <div class="live-icon"></div>
+                <div class="viewer-count">165</div>
+              </div>
+            </div>
+            <!-- <div class="followed-channel">
+              <div class="profile-image" style="filter: grayscale(100%) contrast(85%);">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/lara6683-profile_image-4aa7e08e70c72924-70x70.jpeg" alt="Lara" />
+              </div>
+              <div class="profile-info">
+                <p class="profile-username">lara6683</p>
+                <p class="profile-game-title">
+                  3 new videos
+                </p>
+              </div>
+              <div class="profile-viewers">
+                <div class="viewer-count"></div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <br />
+        <small>Show More</small>
+        <br />
+      </div>
+
+      
+    
+          
 
           <div class="stream-content">
             <!-- <div class="home-header">
@@ -187,86 +369,90 @@
               <div class="games-carousel">
                 <div class="game">
                   <div class="game-cover">
-                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/./Animal%20Crossing:%20New%20Horizons-285x380.jpg" alt="Animal Crossing" />
+                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/497431_IGDB-188x250.jpg" alt="Animal Crossing" />
                   </div>
                   <div class="game-info">
-                    <p class="game-title">Animal Crossing: New Horizons</p>
-                    <p class="game-viewership">61.1K Views</p>
+                    <p class="game-title">Skull and Bones</p>
+                    <p class="game-viewership">10.5K Views</p>
                   </div>
                   <div class="game-categories">
-                    <span>Simulation</span>
+                    <span>Adventure Game</span>
                   </div>
                 </div>
                 <div class="game">
                   <div class="game-cover">
-                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-285x380.jpg" alt="League of Legends" />
+                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/766571430_IGDB-188x250.jpg" alt="League of Legends" />
                   </div>
                   <div class="game-info">
-                    <p class="game-title">League of Legends</p>
-                    <p class="game-viewership">186K Views</p>
+                    <p class="game-title">HELLDIVERS 2</p>
+                    <p class="game-viewership">53.7K Views</p>
                   </div>
                   <div class="game-categories">
-                    <span>MOBA</span>
+                    <span>Shooter</span>
+                    <span>Action</span>
                   </div>
                 </div>
                 <div class="game">
                   <div class="game-cover">
-                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft-285x380.jpg" alt="World of Warcraft" />
+                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/512923_IGDB-188x250.jpg" alt="World of Warcraft" />
                   </div>
                   <div class="game-info">
-                    <p class="game-title">World of Warcraft</p>
-                    <p class="game-viewership">5.4K Views</p>
+                    <p class="game-title">Baldur's Gate 3</p>
+                    <p class="game-viewership">9.9K Views</p>
                   </div>
                   <div class="game-categories">
-                    <span>MMORPG</span>
                     <span>RPG</span>
+                    <span>Strategy</span>
                   </div>
                 </div>
                 <div class="game">
                   <div class="game-cover">
-                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/Overwatch-285x380.jpg" alt="Overwatch" />
+                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/1819887434_IGDB-188x250.jpg" alt="Overwatch" />
                   </div>
                   <div class="game-info">
-                    <p class="game-title">Overwatch</p>
-                    <p class="game-viewership">18.6K Views</p>
+                    <p class="game-title">Tomb Raider I•II•III Remastered</p>
+                    <p class="game-viewership">2.7K Views</p>
                   </div>
                   <div class="game-categories">
-                    <span>FPS</span>
-                    <span>MOBA</span>
+                    <span>Puzzle</span>
+                    <span>Strategy</span>
                   </div>
                 </div>
                 <div class="game">
                   <div class="game-cover">
-                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/Mario%20Kart%208-285x380.jpg" alt="Mario Kart 8" />
+                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/1952699919_IGDB-188x250.jpg" alt="Mario Kart 8" />
                   </div>
                   <div class="game-info">
-                    <p class="game-title">Mario Kart 8</p>
-                    <p class="game-viewership">201K Views</p>
+                    <p class="game-title">Deep Rock Galactic: Survivor</p>
+                    <p class="game-viewership">44.9K Views</p>
                   </div>
                   <div class="game-categories">
-                    <span>Driving/Racing</span>
+                    <span>Adventure Game</span>
+                    <span>Action</span>
                   </div>
                 </div>
                 <div class="game">
                   <div class="game-cover">
-                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/VALORANT-285x380.jpg" alt="Valorant" />
+                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/21842902_IGDB-188x250.jpg" alt="Valorant" />
                   </div>
                   <div class="game-info">
-                    <p class="game-title">VALORANT</p>
-                    <p class="game-viewership">6.1K Views</p>
+                    <p class="game-title">Banishers: Ghosts of New Eden</p>
+                    <p class="game-viewership">2K Views</p>
                   </div>
                   <div class="game-categories">
-                    <span>FPS</span>
+                    <span>RPG</span>
+                    <span>Adventure Game</span>
+                    <span>Action</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="divider">
-              <div class="bar"></div>
+              
               <div class="show-more">
                 Show more <i class="fa fa-chevron-down"></i>
               </div>
-              <div class="bar"></div>
+              
             </div>
             <div class="streams">
               <h3>
@@ -277,23 +463,23 @@
                 <div class="stream">
                   <div class="stream-thumbnail">
                     <span class="live">LIVE</span>
-                    <img src="https://raw.githubusercontent.com/acupoftee/100-Projects-for-100-Days/master/day3_stream_site/assets/eeveea.jpg" alt="Overwatch" />
-                    <span class="viewers">230 viewers</span>
+                    <img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_jabo-440x248.jpg" alt="Overwatch" />
+                    <span class="viewers">777 viewers</span>
                   </div>
                   <div class="stream-info">
                     <div class="stream-profile-avatar">
-                      <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f8964551-4fe4-4db9-adaf-5735ed378521-profile_image-50x50.png" alt="eeveea_" />
+                      <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/647ab27d-f7f9-457c-8a13-709f1553b906-profile_image-50x50.png" alt="eeveea_" />
                     </div>
                     <div class="stream-text">
                       <p class="stream-title">
-                        When comp gives you no mercy ....
+                        Rimworld But EVERYTHING Explodes On Death! - !Plushy
                       </p>
-                      <p class="stream-host">EeveeA_</p>
-                      <p class="stream-game">Overwatch</p>
+                      <p class="stream-host">Jabo</p>
+                      <p class="stream-game">RimWorld</p>
                       <div class="game-categories">
-                        <span>LGBTQIA+</span>
                         <span>English</span>
-                        <span>AMA</span>
+                        <span>sweaty</span>
+                        <span>badaim</span>
                       </div>
                     </div>
                   </div>
@@ -301,22 +487,23 @@
                 <div class="stream">
                   <div class="stream-thumbnail">
                     <span class="live">LIVE</span>
-                    <img src="https://raw.githubusercontent.com/acupoftee/100-Projects-for-100-Days/master/day3_stream_site/assets/emongg.jpg" alt="Overwatch" />
-                    <span class="viewers">9.2K viewers</span>
+                    <img src="https://clips-media-assets2.twitch.tv/51PAExVQ9XDwAWWONLdfvQ/40453789845-offset-11462-preview-480x272.jpg" alt="Overwatch" />
+                    <span class="viewers">635 viewers</span>
                   </div>
                   <div class="stream-info">
                     <div class="stream-profile-avatar">
-                      <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/10c36ad0a4756df8-profile_image-50x50.png" alt="Emongg" />
+                      <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/52695e36-b1b0-432b-965b-f99180d16d18-profile_image-50x50.jpeg" alt="Emongg" />
                     </div>
                     <div class="stream-text">
                       <p class="stream-title">
-                        OW then Valorant Beta !Drops at 1 PM EST :) - Every day in
-                        April is what I said :)
+                        The Story The Seas !hellofresh !merch !yt !elgato
                       </p>
-                      <p class="stream-host">Emongg</p>
-                      <p class="stream-game">VALORANT</p>
+                      <p class="stream-host">RobRaven</p>
+                      <p class="stream-game">Skull and Bones</p>
                       <div class="game-categories">
-                        <span>English</span>
+                        <span>Funny</span>
+                        <span>ASD</span>
+                        <span>Comedy</span>
                       </div>
                     </div>
                   </div>
@@ -324,22 +511,23 @@
                 <div class="stream">
                   <div class="stream-thumbnail">
                     <span class="live">LIVE</span>
-                    <img src="https://raw.githubusercontent.com/acupoftee/100-Projects-for-100-Days/master/day3_stream_site/assets/fareeha.jpg" alt="Animal Crossing" />
-                    <span class="viewers">1K viewers</span>
+                    <img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_pewdiepie-440x248.jpg" alt="Animal Crossing" />
+                    <span class="viewers">201 viewers</span>
                   </div>
                   <div class="stream-info">
                     <div class="stream-profile-avatar">
-                      <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/525d89ba-6310-4eeb-a522-a34ba67e0c36-profile_image-50x50.png" alt="fareeha" />
+                      <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/fb3a0d41-4cd4-4d2c-9c1c-8d49c195b4a2-profile_image-50x50.png" alt="fareeha" />
                     </div>
                     <div class="stream-text">
                       <p class="stream-title">
-                        gone mad with power
+                        ∞ Binge @PewDiePie vids 24/7 with chat ∞
                       </p>
-                      <p class="stream-host">Fareeha</p>
-                      <p class="stream-game">Animal Crossing: New Horizons</p>
+                      <p class="stream-host">PewDiePie</p>
+                      <p class="stream-game">Always On</p>
                       <div class="game-categories">
-                        <span>English</span>
-                        <span>LGBTQIA+</span>
+                        <span>AlwaysOn</span>
+                        <span>memes</span>
+                        <span>Minecraft</span>
                       </div>
                     </div>
                   </div>
@@ -347,11 +535,11 @@
               </div>
             </div>
             <div class="divider">
-              <div class="bar"></div>
+              
               <div class="show-more">
                 Show more <i class="fa fa-chevron-down"></i>
               </div>
-              <div class="bar"></div>
+              
             </div>
             <div class="videos">
               <h3>
@@ -361,23 +549,21 @@
               <div class="video-carousel">
                 <div class="video">
                   <div class="video-thumbnail">
-                    <img src="https://raw.githubusercontent.com/acupoftee/100-Projects-for-100-Days/master/day3_stream_site/assets/cobi.jpg" alt="Donkey Kong Country" />
-                    <span class="viewers">41:39</span>
+                    <img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_anthonyz-320x180.jpg" alt="Donkey Kong Country" />
+                    <span class="viewers">05:18:10</span>
                   </div>
                   <div class="video-info">
                     <div class="video-profile-avatar">
-                      <img src="https://yt3.ggpht.com/a/AATXAJxQ0oK0Dd-3wF9cNtljrjLWV1wlyAw6IwOTIA=s176-c-k-c0xffffffff-no-rj-mo" alt="cobanermani456" />
+                      <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/498c48d1-1d25-4cd9-97c7-653ddabcddf0-profile_image-50x50.png" alt="cobanermani456" />
                     </div>
                     <div class="video-text">
                       <p class="video-title">
-                        Donkey Kong Country Tropical Freeze - Part 2 World 2
-                        SPEEDRUN 100% (Nintendo Switch)
+                        ITS CHEWSDAY MATE NOPIXEL 4.0!!! | LIVE MON-FRI
                       </p>
-                      <p class="video-host">cobanermani456</p>
-                      <p class="video-game">Donkey Kong Country</p>
+                      <p class="video-host">AnthonyZ</p>
+                      <p class="video-game">Grand Theft Auto V</p>
                       <p class="video-game">291K views · 1 day ago</p>
                       <div class="game-categories">
-                        <span>Lets Play</span>
                         <span>English</span>
                       </div>
                     </div>
@@ -386,7 +572,7 @@
                 <div class="video">
                   <div class="video-thumbnail">
                     <div class="hover-accent left"></div>
-                    <img src="https://raw.githubusercontent.com/acupoftee/100-Projects-for-100-Days/master/day3_stream_site/assets/markiplier.jpg" alt="Resident Evil" />
+                    <img src="https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/e92d917f2f3d0fe1724e_markiplier_41730965275_1673903539//thumb/thumb0-320x180.jpg" alt="Resident Evil" />
                     <span class="viewers">1:24:32</span>
                   </div>
                   <div class="video-info">
@@ -409,23 +595,24 @@
                 </div>
                 <div class="video">
                   <div class="video-thumbnail">
-                    <img id="current" src="https://raw.githubusercontent.com/acupoftee/100-Projects-for-100-Days/master/day3_stream_site/assets/letsplay.jpg" alt="Animal Crossing" />
-                    <span class="viewers">46:52</span>
+                    <img id="current" src="https://static-cdn.jtvnw.net/previews-ttv/live_user_rythmic_portal-320x180.jpg" alt="Animal Crossing" />
+                    <span class="viewers">24:59:59</span>
                   </div>
                   <div class="video-info">
                     <div class="video-profile-avatar">
-                      <img src="https://yt3.ggpht.com/a/AATXAJzxew4STpgm_v3PdElrQyDG8ZDNuJ6uzkrM7Q=s288-c-k-c0xffffffff-no-rj-mo" alt="LetsPlay" />
+                      <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/fe6d272a-a5a0-49c7-a027-f7d851b68ec4-profile_image-50x50.png" alt="LetsPlay" />
                     </div>
                     <div class="video-text">
                       <p class="video-title">
-                        Animal Crossing New Horizons - We Join The Cult of Nook
+                        BATMAN / CARTOON CLASSICS ❤️ NETWORK COMMUNITY ❤️ REAL SUPPORT... SHOW LOVE ALWAYS! #Nostalgia #Memories #Promote #Network #Love
                       </p>
-                      <p class="video-host">LetsPlay</p>
-                      <p class="video-game">Animal Crossing: New Horizons</p>
+                      <p class="video-host">Rythmic_Portal</p>
+                      <p class="video-game">Always On</p>
                       <p class="video-game">160K views · 1 day ago</p>
                       <div class="game-categories">
-                        <span>Lets Play</span>
-                        <span>English</span>
+                        <span>classics</span>
+                        <span>comedy</span>
+                        <span>cartoon</span>
                       </div>
                     </div>
                   </div>
@@ -433,12 +620,10 @@
               </div>
             </div>
           </div>
+        
+      
+    
         </div>
-      </div>
-    </body>
-
-    </html>
-
     
 </body>
 </html>

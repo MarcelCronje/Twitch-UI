@@ -1,0 +1,420 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+  color: rgb(211, 211, 211);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 50px auto;
+}
+
+.bar {
+  background-color: #18181b;
+  height: 50px;
+  box-shadow: 0px 1px 1px black;
+  z-index: 2;
+  display: flex;
+}
+
+.bar .nav {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: auto;
+  height: 100%;
+}
+.bar .nav .item {
+  margin: 0 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.bar .nav .item:hover {
+  color: #a970ff;
+  cursor: pointer;
+}
+
+#selected {
+  color: #a970ff;
+  border-bottom: 2px solid #a970ff;
+}
+
+.main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.main .stream-content p:hover {
+  cursor: pointer;
+  color: #a970ff;
+}
+.streamer-bar {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.streamer-bar small {
+  color: #a970ff;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.streamer-bar small:hover {
+  color: #a970ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.streamer-bar .streamer-bar-title p {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+.streamer-bar .followed-channels {
+  width: 100%;
+  display: grid;
+}
+
+.streamer-bar .followed-channels .followed-channel {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
+.streamer-bar .followed-channels .followed-channel:hover {
+  background-color: #2e2e35;
+  cursor: pointer;
+}
+.streamer-bar .followed-channels .followed-channel .profile-image {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0 !important;
+}
+
+.streamer-bar .followed-channels .followed-channel .profile-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.streamer-bar .followed-channels .followed-channel .profile-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1 !important;
+  padding-left: 10px;
+  width: 50%;
+}
+
+.streamer-bar
+  .followed-channels
+  .followed-channel
+  .profile-info
+  .profile-game-title,
+.streamer-bar
+  .followed-channels
+  .followed-channel
+  .profile-info
+  .profile-username {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.streamer-bar .followed-channels .followed-channel .profile-viewers {
+  display: flex;
+  width: 40px;
+  height: auto;
+  align-items: flex-start;
+  justify-content: left;
+  margin-right: 15px;
+}
+
+.streamer-bar .followed-channels .followed-channel .live-icon {
+  width: 7px;
+  height: 7px;
+  background-color: red;
+  border-radius: 100%;
+}
+
+/* .streamer-bar .followed-channels .followed-channel .upload-icon {
+  width: 7px;
+  height: 7px;
+  background-color: lime;
+  border-radius: 100%;
+} */
+
+.streamer-bar
+  .followed-channels
+  .followed-channel
+  .profile-viewers
+  .viewer-count {
+  font-size: 13px;
+  margin-left: 5px;
+  padding-top: 0;
+}
+
+.streamer-bar
+  .followed-channels
+  .followed-channel
+  .profile-info
+  .profile-username {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.streamer-bar
+  .followed-channels
+  .followed-channel
+  .profile-info
+  .profile-game-title {
+  font-size: 12px;
+  margin: 0;
+  overflow: hidden;
+  color: rgb(163, 163, 163);
+}
+
+.streamer-bar {
+  background-color: #1f1f23;
+  overflow-y: scroll;
+}
+
+.streamer-bar-title .mobile-title {
+  display: none;
+}
+.stream-content {
+  padding: 20px;
+  background-color: #0e0e10;
+  overflow-y: scroll;
+}
+
+.games-carousel {
+  max-width: 100%;
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 10px;
+}
+
+.games-carousel .game .game-cover {
+  transition: transform 0.1s ease;
+}
+
+.games-carousel .game .game-cover:hover {
+  transform: translate(5px, -5px);
+  cursor: pointer;
+}
+.games-carousel .game .game-cover img {
+  height: 100%;
+  width: 100%;
+}
+
+.games-carousel .game .game-cover:hover img {
+  box-shadow: -5px 5px #a970ff;
+}
+
+.games-carousel .game .game-info .game-title,
+.stream-carousel .stream .stream-text .stream-title,
+.video-carousel .video .video-text .video-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.game-info .game-viewership,
+.stream-text .stream-host,
+.stream-text .stream-game,
+.video-text .video-host,
+.video-text .video-game {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: rgb(163, 163, 163);
+}
+
+.title-highlight {
+  color: #a970ff;
+}
+
+.game-categories span {
+  background-image: linear-gradient(45deg, #6441a4, #a970ff);
+  padding: 2px 0.8rem;
+  color: white;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.stream-carousel,
+.video-carousel {
+  max-width: 100%;
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.stream-carousel .stream .stream-thumbnail,
+.video-carousel .video .video-thumbnail {
+  transition: transform 0.1s ease;
+}
+
+.stream-carousel .stream .stream-thumbnail:hover,
+.video-carousel .video .video-thumbnail:hover {
+  transform: translate(5px, -5px);
+  cursor: pointer;
+}
+
+.stream-carousel .stream .stream-thumbnail:hover img,
+.video-carousel .video .video-thumbnail:hover img {
+  box-shadow: -5px 5px #a970ff;
+}
+
+.stream-carousel .stream .stream-thumbnail img,
+.video-carousel .video .video-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+.stream-carousel .stream .stream-thumbnail span,
+.video-carousel .video .video-thumbnail span {
+  position: relative;
+  font-size: 14px;
+}
+
+.live {
+  background-color: red;
+  border-radius: 5px;
+  padding: 5px;
+  left: 5px;
+  top: 25px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.viewers {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 30px;
+  left: 5px;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 100;
+  color: white;
+}
+
+.stream-carousel .stream-info,
+.video-carousel .video-info {
+  display: flex;
+}
+
+.stream-carousel .stream-info .stream-text,
+.video-carousel .video-info .video-text {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.stream-carousel .stream-info .stream-profile-avatar,
+.video-carousel .video-info .video-profile-avatar {
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.stream-carousel .stream-info .stream-profile-avatar img,
+.video-carousel .video-info .video-profile-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px auto;
+}
+
+.divider .bar {
+  height: 1px;
+  width: auto;
+  padding: 0 10px;
+  flex-grow: 1 !important;
+  background-color: rgb(39, 39, 39);
+}
+
+.divider .show-more {
+  padding: 10px;
+  margin: 10px;
+  color: #a970ff;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.1s ease;
+  font-size: 12px;
+}
+
+.divider .show-more:hover {
+  background-color: rgb(36, 36, 36);
+  cursor: pointer;
+  border-radius: 5px;
+}
+@media (max-width: 1305px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .main {
+    grid-template-columns: 50px 12fr;
+  }
+
+  .streamer-bar {
+    overflow: hidden;
+  }
+
+  .streamer-bar .streamer-bar-title .desktop-title {
+    display: none;
+  }
+
+  .streamer-bar .streamer-bar-title .mobile-title {
+    display: block;
+    text-align: center;
+  }
+
+  .streamer-bar small {
+    display: none;
+  }
+}

@@ -75,17 +75,7 @@ body {
   overflow-y: scroll;
 }
 
-.streamer-bar small {
-  color: #a970ff;
-  padding: 10px;
-  font-size: 12px;
-}
 
-.streamer-bar small:hover {
-  color: #a970ff;
-  text-decoration: underline;
-  cursor: pointer;
-}
 
 .streamer-bar .streamer-bar-title p {
   text-transform: uppercase;
@@ -203,18 +193,10 @@ body {
   color: rgb(163, 163, 163);
 }
 
-.streamer-bar {
-  background-color: #1f1f23;
-  /* overflow-y: scroll; */
-  overflow: scroll;
-  position: fixed;
-  height: 100vh;
-  z-index: 2;
-}
-
 .streamer-bar-title .mobile-title {
   display: none;
 }
+
 .stream-content {
   padding: 20px;
   background-color: #0e0e10;
@@ -401,30 +383,120 @@ body {
   cursor: pointer;
   border-radius: 5px;
 }
-@media (max-width: 1305px) {
-  html,
-  body {
-    width: 100%;
-    height: 100%;
+
+@media (min-width: 320px) {
+  .streamer-bar {
+    display: none;
   }
-  .main {
-    grid-template-columns: 50px 12fr;
+
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  .streamer-bar {
+    display: none;
+  }
+
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 90%;
+    position: absolute;
+    right: 0;
   }
 
   .streamer-bar {
-    overflow: hidden;
-  }
-
-  .streamer-bar .streamer-bar-title .desktop-title {
-    display: none;
-  }
-
-  .streamer-bar .streamer-bar-title .mobile-title {
     display: block;
-    text-align: center;
+    background-color: #1f1f23;
+    width: 4em;
+    overflow: scroll;
+    position: fixed;
+    height: 100vh;
+    z-index: 2;
+  }
+
+  .profile-info {
+    display: none;
   }
 
   .streamer-bar small {
-    display: none;
+    display: block;
+    color: #a970ff;
+    padding: 10px;
+    font-size: 12px;
   }
+  
+  .streamer-bar small:hover {
+    color: #a970ff;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .streamer-bar .streamer-bar-title .desktop-title {
+    display: block;
+  }
+
+  .streamer-bar .streamer-bar-title .mobile-title {
+    display: none;
+    text-align: center;
+  }
+
+  
+}
+
+@media (min-width: 1280px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 77%;
+    position: absolute;
+    right: 0;
+  }
+
+  .streamer-bar {
+    background-color: #1f1f23;
+    width: 16em;
+    overflow: scroll;
+    position: fixed;
+    height: 100vh;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 1920px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 84.5%;
+    position: absolute;
+    right: 0;
+  }
+
+  .streamer-bar {
+    background-color: #1f1f23;
+    overflow: scroll;
+    position: fixed;
+    height: 100vh;
+    z-index: 2;
+  }
+
 }

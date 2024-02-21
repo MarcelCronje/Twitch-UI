@@ -481,6 +481,39 @@ body {
   }
 }
 
+@media (min-width: 1422px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 77%;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 77%;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (min-width: 1706px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 77%;
+    position: absolute;
+    right: 0;
+  }
+}
+
 @media (min-width: 1920px) {
   .stream-content {
     padding: 20px;
@@ -499,4 +532,37 @@ body {
     z-index: 2;
   }
 
+}
+
+@media (min-width: 2560px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 77%;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (min-width: 3840px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 92.5%;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (min-width: 5120px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 94.3%;
+    position: absolute;
+    right: 0;
+  }
 }

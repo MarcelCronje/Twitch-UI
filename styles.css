@@ -450,15 +450,26 @@ body {
   }
 
   .streamer-bar .streamer-bar-title .desktop-title {
-    display: block;
+    display: none;
   }
 
   .streamer-bar .streamer-bar-title .mobile-title {
-    display: none;
+    display: block;
     text-align: center;
   }
 
   
+}
+
+@media (min-width: 1163px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 91%;
+    position: absolute;
+    right: 0;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -479,6 +490,15 @@ body {
     height: 100vh;
     z-index: 2;
   }
+
+  .streamer-bar .streamer-bar-title .desktop-title {
+    display: block;
+  }
+
+  .streamer-bar .streamer-bar-title .mobile-title {
+    display: none;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1422px) {
@@ -486,7 +506,7 @@ body {
     padding: 20px;
     background-color: #0e0e10;
     overflow: hidden;
-    width: 77%;
+    width: 79%;
     position: absolute;
     right: 0;
   }
@@ -497,7 +517,7 @@ body {
     padding: 20px;
     background-color: #0e0e10;
     overflow: hidden;
-    width: 77%;
+    width: 82%;
     position: absolute;
     right: 0;
   }
@@ -508,7 +528,7 @@ body {
     padding: 20px;
     background-color: #0e0e10;
     overflow: hidden;
-    width: 77%;
+    width: 83%;
     position: absolute;
     right: 0;
   }
@@ -539,7 +559,7 @@ body {
     padding: 20px;
     background-color: #0e0e10;
     overflow: hidden;
-    width: 77%;
+    width: 88.5%;
     position: absolute;
     right: 0;
   }

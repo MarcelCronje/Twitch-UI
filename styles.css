@@ -1,12 +1,38 @@
 html,
 body {
   width: 100%;
-  /* height: 100%; */
   margin: 0;
   padding: 0;
   font-family: "Helvetica", sans-serif;
   color: rgb(211, 211, 211);
-  /* overflow: hidden; */
+}
+
+body::-webkit-scrollbar {
+  width: 12px;                 /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #18181b;       /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #a970ff; /* color of the scroll thumb */
+  border-radius: 20px;         /* roundness of the scroll thumb */
+  border: 3px solid #18181b; /* creates padding around scroll thumb */
+}
+
+.streamer-bar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.streamer-bar::-webkit-scrollbar-track {
+  background: #18181b; 
+}
+
+.streamer-bar::-webkit-scrollbar-thumb {
+  background-color: #a970ff;   
+  border-radius: 20px;       
+  border: 3px solid #18181b;
 }
 
 .container {
@@ -153,13 +179,6 @@ body {
   background-color: red;
   border-radius: 100%;
 }
-
-/* .streamer-bar .followed-channels .followed-channel .upload-icon {
-  width: 7px;
-  height: 7px;
-  background-color: lime;
-  border-radius: 100%;
-} */
 
 .streamer-bar
   .followed-channels
@@ -461,6 +480,27 @@ body {
   
 }
 
+@media (min-width: 1097px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 91%;
+    position: absolute;
+    right: 0;
+  }
+
+  .streamer-bar {
+    display: block;
+    background-color: #1f1f23;
+    width: 3.9em;
+    overflow: scroll;
+    position: fixed;
+    height: 100vh;
+    z-index: 2;
+  }
+}
+
 @media (min-width: 1163px) {
   .stream-content {
     padding: 20px;
@@ -512,6 +552,17 @@ body {
   }
 }
 
+@media (min-width: 1536px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 80.6%;
+    position: absolute;
+    right: 0;
+  }
+}
+
 @media (min-width: 1600px) {
   .stream-content {
     padding: 20px;
@@ -554,12 +605,45 @@ body {
 
 }
 
+@media (min-width: 2133px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 86.1%;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (min-width: 2400px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 87.6%;
+    position: absolute;
+    right: 0;
+  }
+}
+
 @media (min-width: 2560px) {
   .stream-content {
     padding: 20px;
     background-color: #0e0e10;
     overflow: hidden;
     width: 88.5%;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (min-width: 2880px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 89.7%;
     position: absolute;
     right: 0;
   }
@@ -582,6 +666,28 @@ body {
     background-color: #0e0e10;
     overflow: hidden;
     width: 94.3%;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (min-width: 5760px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 94.9%;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (min-width: 7680px) {
+  .stream-content {
+    padding: 20px;
+    background-color: #0e0e10;
+    overflow: hidden;
+    width: 96.2%;
     position: absolute;
     right: 0;
   }

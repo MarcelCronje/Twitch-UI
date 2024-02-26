@@ -5,6 +5,7 @@ body {
   padding: 0;
   font-family: "Helvetica", sans-serif;
   color: rgb(211, 211, 211);
+  background-color: #0e0e10;
 }
 
 body::-webkit-scrollbar {
@@ -436,7 +437,7 @@ body::-webkit-scrollbar-thumb {
     padding: 20px;
     background-color: #0e0e10;
     overflow: hidden;
-    width: 90%;
+    width: 89.9%;
     position: absolute;
     right: 0;
   }
@@ -444,7 +445,7 @@ body::-webkit-scrollbar-thumb {
   .streamer-bar {
     display: block;
     background-color: #1f1f23;
-    width: 4em;
+    width: 3.9em;
     overflow: scroll;
     position: fixed;
     height: 100vh;
@@ -506,9 +507,19 @@ body::-webkit-scrollbar-thumb {
     padding: 20px;
     background-color: #0e0e10;
     overflow: hidden;
-    width: 91%;
+    width: 91.3%;
     position: absolute;
     right: 0;
+  }
+
+  .streamer-bar {
+    display: block;
+    background-color: #1f1f23;
+    width: 3.8em;
+    overflow: scroll;
+    position: fixed;
+    height: 100vh;
+    z-index: 2;
   }
 }
 
@@ -546,7 +557,7 @@ body::-webkit-scrollbar-thumb {
     padding: 20px;
     background-color: #0e0e10;
     overflow: hidden;
-    width: 79%;
+    width: 79.1%;
     position: absolute;
     right: 0;
   }

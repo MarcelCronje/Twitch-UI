@@ -226,14 +226,6 @@ body::-webkit-scrollbar-thumb {
   right: 0;
 }
 
-.games-carousel {
-  max-width: 100%;
-  display: grid;
-  height: auto;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  grid-gap: 10px;
-}
-
 .games-carousel .game .game-cover {
   transition: transform 0.1s ease;
 }
@@ -405,6 +397,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 320px) {
+  .games-carousel {
+    max-width: 100%;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 10px;
+    overflow: hidden;
+  }
+
   .streamer-bar {
     display: none;
   }
@@ -433,6 +434,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 1024px) {
+  .games-carousel {
+    max-width: 100%;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 10px;
+    overflow: hidden;
+  }
+
   .stream-content {
     padding: 20px;
     background-color: #0e0e10;
